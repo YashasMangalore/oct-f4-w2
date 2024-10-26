@@ -1,0 +1,66 @@
+.lookup-container {
+    padding: 20px;
+}
+
+.input-box {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.lookup-button {
+    width: 150px; /* Fixed width */
+    padding: 10px;
+    background-color: black; /* Black background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.lookup-button:hover {
+    background-color: #333; /* Darker on hover */
+}
+
+.result-container {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Two columns */
+    gap: 10px; /* Space between boxes */
+    margin-top: 20px;
+}
+
+.result-box {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.filter-input {
+    width: 100%; /* Full width */
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
